@@ -85,6 +85,14 @@ root
         method_name: :to_markdown,
         expected: MARKDOWN
       },
+      {
+        case_no: 5,
+        case_title: 'markdown to tab case',
+        type: :markdown,
+        input: MARKDOWN,
+        method_name: :to_tab,
+        expected: TAB
+      },
     ]
 
     cases.each do |c|
