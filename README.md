@@ -1,5 +1,7 @@
 # Gottani
 
+[![Build Status](https://travis-ci.org/tbpgr/gottani.png?branch=master)](https://travis-ci.org/tbpgr/gottani)
+
 Gottani is coverter for indent-style text.
 
 ## Support type
