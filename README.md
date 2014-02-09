@@ -29,10 +29,11 @@ Or install it yourself as:
 ### Convert List
 | type          | convert_type key                | convert_method_name |
 |:-----------   |:------------                    |:------------        |
-|tab-indent     |Gottani::Core.new :tab, text     |to_tab               |
+|hatena         |Gottani::Core.new :hatena, text  |to_hatena            |
+|markdown       |Gottani::Core.new :markdown, text|to_markdown          |
 |space2-indent  |Gottani::Core.new :space2, text  |to_space2            |
 |space4-indent  |Gottani::Core.new :space4, text  |to_space4            |
-|markdown       |Gottani::Core.new :markdown, text|to_markdown          |
+|tab-indent     |Gottani::Core.new :tab, text     |to_tab               |
 
 ### tab-indent to space2 indent
 
@@ -136,7 +137,43 @@ output
 ## child3
 ~~~
 
+
+### space4 to Hatena indent
+
+~~~ruby
+require 'gottani_core'
+
+text =<<-EOS
+root
+    child1
+        child1_1
+            child1_1_1
+            child1_1_2
+        child1_2
+    child2
+        child2_1
+    child3
+EOS
+
+gottani_core = Gottani::Core.new :space4, text
+gottani_core.to_hatena
+~~~
+
+output
+~~~
+*root
+**child1
+***child1_1
+****child1_1_1
+****child1_1_2
+***child1_2
+**child2
+***child2_1
+**child3
+~~~
+
 ## History
+* version 0.0.2  : add Hatena Format.
 * version 0.0.1  : first release.
 
 ## Contributing

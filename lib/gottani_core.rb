@@ -4,6 +4,7 @@ require 'indents/tab'
 require 'indents/space2'
 require 'indents/space4'
 require 'indents/markdown'
+require 'indents/hatena'
 
 module Gottani
   class Core
@@ -13,6 +14,7 @@ module Gottani
       space2: Gottani::Space2,
       space4: Gottani::Space4,
       markdown: Gottani::Markdown,
+      hatena: Gottani::Hatena,
     }
 
     def initialize(type, base)

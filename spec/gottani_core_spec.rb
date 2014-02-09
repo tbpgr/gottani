@@ -52,6 +52,18 @@ root
 ## child3
     EOS
 
+    HATENA = <<-EOS
+*root
+**child1
+***child1_1
+****child1_1_1
+****child1_1_2
+***child1_2
+**child2
+***child2_1
+**child3
+    EOS
+
     cases = [
       {
         case_no: 1,
@@ -92,6 +104,14 @@ root
         input: MARKDOWN,
         method_name: :to_tab,
         expected: TAB
+      },
+      {
+        case_no: 6,
+        case_title: 'markdown to hatena case',
+        type: :markdown,
+        input: MARKDOWN,
+        method_name: :to_hatena,
+        expected: HATENA
       },
     ]
 
