@@ -10,6 +10,7 @@ Gottani is coverter for indent-style text.
 * Space2 indent
 * Space4 indent
 * Markdown indent
+* Hatena indent
 
 ## Installation
 
