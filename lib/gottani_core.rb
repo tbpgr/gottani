@@ -19,7 +19,7 @@ module Gottani
 
     def initialize(type, base)
       instance = FORMAT[type].new
-      @common = instance.send "#{type.to_s}_to_common", base
+      @common = instance.send "#{type}_to_common", base
     end
 
     def method_missing(method_name, *args, &block)

@@ -8,10 +8,10 @@ module Gottani
 
     module ClassMethods
       def define_to_common(base)
-        define_method "#{base.to_s}_to_common".to_sym do |text|
+        define_method "#{base}_to_common".to_sym do |text|
           to_common text, indent_char, separator
         end
-        alias_method "to_#{base.to_s}".to_sym, :to_indent_text
+        alias_method "to_#{base}".to_sym, :to_indent_text
       end
     end
 
