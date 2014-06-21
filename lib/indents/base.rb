@@ -16,9 +16,9 @@ module Gottani
     end
 
     def initialize
-      @indent_char = get_indent_char
+      @indent_char = indent_char
       @zero_start = zero_start?
-      @separator = get_separator
+      @separator = separator
     end
 
     def to_common(text, indent_char, separator = '')

@@ -7,7 +7,7 @@ module Gottani
 
     define_to_common :tab
 
-    def get_indent_char
+    def indent_char
       "\t"
     end
 
@@ -15,7 +15,7 @@ module Gottani
       false
     end
 
-    def get_separator
+    def separator
       nil
     end
   end

@@ -7,7 +7,7 @@ module Gottani
 
     define_to_common :markdown
 
-    def get_indent_char
+    def indent_char
       '#'
     end
 
@@ -15,7 +15,7 @@ module Gottani
       true
     end
 
-    def get_separator
+    def separator
       ' '
     end
   end

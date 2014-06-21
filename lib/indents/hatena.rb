@@ -6,7 +6,7 @@ module Gottani
     include Base
     define_to_common :hatena
 
-    def get_indent_char
+    def indent_char
       '*'
     end
 
@@ -14,7 +14,7 @@ module Gottani
       true
     end
 
-    def get_separator
+    def separator
       nil
     end
   end
