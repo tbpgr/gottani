@@ -23,7 +23,7 @@ module Gottani
     end
 
     def method_missing(method_name, *args, &block)
-      method_name.match /^to_(.*)$/
+      method_name.match(/^to_(.*)$/)
       super unless Regexp.last_match[1]
       instance = FORMAT[Regexp.last_match[1].to_sym].new
       return instance.send("to_#{Regexp.last_match[1]}", @common) if instance
