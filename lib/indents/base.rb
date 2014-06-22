@@ -40,7 +40,7 @@ module Gottani
       common.reduce([]) do |ret, line|
         level = zero_start? ? line[:level] + 1 : line[:level]
         indent = @indent_char * level
-        indent = indent + @separator unless @separator.nil?
+        indent += @separator unless @separator.nil?
         ret << "#{indent}#{line[:value]}"
       end.join("\n") + "\n"
     end
