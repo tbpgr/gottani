@@ -15,7 +15,7 @@ module Gottani
       space2: Gottani::Space2,
       space4: Gottani::Space4,
       markdown: Gottani::Markdown,
-      hatena: Gottani::Hatena,
+      hatena: Gottani::Hatena
     }
 
     def initialize(type, base)
