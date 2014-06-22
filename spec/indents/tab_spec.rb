@@ -2,7 +2,7 @@
 require 'spec_helper'
 require 'indents/tab'
 
-# rubocop:disable Tab
+# rubocop:disable Tab, UnusedMethodArgument
 describe Gottani::Tab do
   # ConcreteTab
   class ConcreteTab
@@ -188,4 +188,4 @@ root
     end
   end
 end
-# rubocop:enable Tab
+# rubocop:enable Tab, UnusedMethodArgument

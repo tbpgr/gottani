@@ -11,7 +11,7 @@ module Gottani
     module ClassMethods
       def define_to_common(base)
         define_method "#{base}_to_common".to_sym do |text|
-          to_common text, indent_char, separator
+          to_common text
         end
         alias_method "to_#{base}".to_sym, :to_indent_text
       end
@@ -23,7 +23,7 @@ module Gottani
       @separator = separator
     end
 
-    def to_common(text, indent_char, separator = '')
+    def to_common(text)
       text.each_line.reduce([]) do |ret, line|
         chopped = line.chop
         line_hash = {}

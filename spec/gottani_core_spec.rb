@@ -2,7 +2,7 @@
 require 'spec_helper'
 require 'gottani_core'
 
-# rubocop:disable Tab
+# rubocop:disable Tab, UnusedMethodArgument
 describe Gottani::Core do
   context :to_tab do
     TAB = <<-EOS
@@ -144,4 +144,4 @@ root
     end
   end
 end
-# rubocop:enable Tab
+# rubocop:enable Tab, UnusedMethodArgument
