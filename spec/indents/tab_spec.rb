@@ -3,6 +3,7 @@ require 'spec_helper'
 require 'indents/tab'
 
 describe Gottani::Tab do
+  # ConcreteTab
   class ConcreteTab
     attr_reader :text, :common
 

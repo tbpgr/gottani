@@ -2,6 +2,7 @@
 require 'indents/base'
 
 module Gottani
+  # Gottani::Space2
   class Space2
     include Base
     define_to_common :space2

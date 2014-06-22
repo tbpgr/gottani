@@ -2,10 +2,12 @@
 require 'active_support/concern'
 
 module Gottani
+  # Gottani::Base
   module Base
     extend ActiveSupport::Concern
     attr_accessor :indent_char, :separator
 
+    # ClassMethods
     module ClassMethods
       def define_to_common(base)
         define_method "#{base}_to_common".to_sym do |text|

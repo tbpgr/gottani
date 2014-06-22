@@ -2,6 +2,7 @@
 require 'indents/base'
 
 module Gottani
+  # Gottani::Tab
   class Tab
     include Base
 

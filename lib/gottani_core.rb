@@ -7,6 +7,7 @@ require 'indents/markdown'
 require 'indents/hatena'
 
 module Gottani
+  # Gottani::Core
   class Core
     attr_reader :type, :common
     FORMAT = {

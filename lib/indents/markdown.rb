@@ -2,6 +2,7 @@
 require 'indents/base'
 
 module Gottani
+  # Gottani::Markdown
   class Markdown
     include Base
 

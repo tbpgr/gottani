@@ -2,6 +2,7 @@
 require 'indents/base'
 
 module Gottani
+  # Gottani::Hatena
   class Hatena
     include Base
     define_to_common :hatena
