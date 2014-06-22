@@ -68,9 +68,9 @@ root
           {
             level: 1,
             value: 'child3'
-          },
-        ],
-      },
+          }
+        ]
+      }
     ]
 
     cases.each do |c|
@@ -153,10 +153,10 @@ root
           {
             level: 1,
             value: 'child3'
-          },
+          }
         ],
         expected: EXPECTED_TABTREE_CASE1
-      },
+      }
     ]
 
     cases.each do |c|

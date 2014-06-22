@@ -113,7 +113,7 @@ root
         input: MARKDOWN,
         method_name: :to_hatena,
         expected: HATENA
-      },
+      }
     ]
 
     cases.each do |c|
