@@ -26,11 +26,11 @@ module Gottani
     def to_common(text, indent_char, separator = '')
       ret = []
       text.each_line.with_index do |line, index|
-        chopped_line = line.chop
+        chopped = line.chop
         line_hash = {}
-        level = zero_start? ? indent_level(chopped_line) - 1 : indent_level(chopped_line)
+        level = zero_start? ? indent_level(chopped) - 1 : indent_level(chopped)
         line_hash[:level] = level
-        line_hash[:value] = indentless_line(chopped_line)
+        line_hash[:value] = indentless_line(chopped)
         line_hash[:value].gsub!(/^#{@separator}/, '') unless @separator.nil?
         ret << line_hash
       end
