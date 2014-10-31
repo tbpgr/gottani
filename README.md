@@ -5,7 +5,7 @@
 [![Coverage Status](https://coveralls.io/repos/tbpgr/gottani/badge.png?branch=master)](https://coveralls.io/r/tbpgr/gottani?branch=master)
 [![Code Climate](https://codeclimate.com/github/tbpgr/gottani.png)](https://codeclimate.com/github/tbpgr/gottani)
 
-Gottani is coverter for indent-style text.
+Gottani is converter for indent-style text.
 
 ## Support type
 

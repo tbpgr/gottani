@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Gottani::VERSION
   spec.authors       = ['tbpgr']
   spec.email         = ['tbpgr@tbpgr.jp']
-  spec.description   = %q(Gottani is coverter for indent-style text.)
-  spec.summary       = %q(Gottani is coverter for indent-style text.)
+  spec.description   = %q(Gottani is converter for indent-style text.)
+  spec.summary       = %q(Gottani is converter for indent-style text.)
   spec.homepage      = 'https://github.com/tbpgr/gottani'
   spec.license       = 'MIT'
 
